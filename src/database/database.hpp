@@ -52,7 +52,6 @@ public:
 	 *   This helps prevent excessive growth in the number of backup files.
 	 * - If `compress` is false, the backup is created during the global save, which is triggered once a day when the server loads.
 	 */
-	void createDatabaseBackup(bool compress) const;
 
 	bool retryQuery(std::string_view query, int retries);
 	bool executeQuery(std::string_view query);
